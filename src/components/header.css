@@ -1,0 +1,167 @@
+:root {
+  --sidebar-bg-color: #ffffff; /* Cor de fundo da sidebar */
+  --sidebar-text-color: #34495E; /* Cor do texto */
+  --sidebar-title-color: #1E3A8A; /* Cor do título */
+  --menu-item-hover-bg-color: #f0f0f0; /* Cor de fundo do item do menu ao passar o mouse */
+  --menu-item-text-color: #34495E; /* Cor do texto do item do menu */
+  --social-icon-color: #6c757d; /* Cor padrão dos ícones sociais */
+  --social-icon-hover-color: #1e90ff; /* Cor dos ícones ao passar o mouse */
+  --social-facebook-hover-color: #4267B2; /* Azul do Facebook */
+  --social-instagram-hover-color: #E4405F; /* Laranja do Instagram */
+  --social-whatsapp-hover-color: #25D366; /* Verde do WhatsApp */
+}
+
+/* Estilização global */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Cor de fundo do conteúdo principal */
+}
+
+/* Container principal */
+.app-container {
+  display: flex; /* Organização lado a lado */
+}
+
+/* Sidebar fixa com z-index */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Largura fixa da sidebar */
+  height: 100vh;
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+/* Título da sidebar */
+.sidebar-title-container {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  color: var(--sidebar-title-color); /* Cor do título */
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.glv-informatica-text {
+  font-family: 'Arial', sans-serif; /* Altere para a fonte usada no logo, se necessário */
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to right, #469bfd, #000000); /* Gradiente azul claro para branco */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.informatica-text {
+  font-family: 'Arial', sans-serif; /* Fonte para o subtítulo */
+  font-size: 16px;
+  font-weight: normal;
+  color: #34495E;
+  display: block;
+}
+
+/* Divisores */
+.sidebar-divider {
+  background-color: #BDC3C7;
+  height: 1px;
+  margin: 5px 0;
+}
+
+/* Itens do menu */
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  color: var(--menu-item-text-color);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: var(--menu-item-hover-bg-color);
+  border-radius: 1px;
+}
+
+.menu-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Rodapé da sidebar */
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 50px;
+  color: #7f8c8d;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6px 0;
+}
+
+.social-link {
+  font-size: 20px;
+  color: var(--social-icon-color);
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--social-icon-hover-color);
+}
+
+.social-link.facebook:hover {
+  color: var(--social-facebook-hover-color);
+}
+
+.social-link.instagram:hover {
+  color: var(--social-instagram-hover-color);
+}
+
+.social-link.whatsapp:hover {
+  color: var(--social-whatsapp-hover-color);
+}
+
+/* Conteúdo principal */
+.main-content {
+  margin-left: 300px; /* Espaço reservado para a sidebar */
+  padding: 2px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Garante que o conteúdo principal preencha toda a altura */
+  flex-grow: 1;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none; /* Esconde a sidebar */
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove o deslocamento */
+  }
+}

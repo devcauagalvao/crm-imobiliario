@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es5",                           // Define a versão do JavaScript que o compilador irá gerar (ES5 por ser amplamente compatível).
+      "lib": ["dom", "es2015"],                  // Bibliotecas que o TypeScript usará durante a compilação.
+      "allowJs": true,                           // Permite usar arquivos JavaScript no seu projeto.
+      "skipLibCheck": true,                      // Ignora a verificação de tipo de bibliotecas.
+      "esModuleInterop": true,                   // Facilita a interoperabilidade entre módulos CommonJS e ESModules.
+      "jsx": "react-jsx",                        // Configuração para suportar JSX no React.
+      "strict": true,                            // Habilita todas as verificações de tipo estritas.
+      "forceConsistentCasingInFileNames": true,  // Garante consistência nos nomes de arquivos.
+      "moduleResolution": "node",                // Usado para resolver módulos da maneira que o Node.js resolve.
+      "resolveJsonModule": true,                 // Permite importar arquivos `.json` como módulos.
+      "isolatedModules": true,                   // Garante que cada arquivo seja tratado como um módulo isolado.
+      "noEmit": true,                            // Não gera arquivos de saída (útil para verificar tipos sem emitir).
+      "skipDefaultLibCheck": true,               // Ignora a verificação da biblioteca padrão.
+      "module": "esnext"                         // Usar o sistema de módulos ES6.
+    },
+    "include": [
+      "src/**/*"                                 // Incluir todos os arquivos dentro da pasta src.
+    ],
+    "exclude": [
+      "node_modules",                            // Excluir a pasta node_modules.
+      "build",                                   // Excluir a pasta de build.
+      "dist"                                     // Excluir a pasta de dist.
+    ]
+  }
+  

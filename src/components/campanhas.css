@@ -1,0 +1,55 @@
+/* Campaigns.css */
+
+/* Estilo do contêiner principal */
+.campaign-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  /* Título principal */
+  .campaign-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  /* Título secundário */
+  .campaign-performance-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  /* Cartões de resumo */
+  .campaign-summary-card {
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .campaign-summary-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .campaign-summary-card p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  /* Layout de grid para as informações resumidas */
+  .campaign-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  /* Animação de carregamento */
+  .loading {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #888;
+  }
+  

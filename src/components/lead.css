@@ -1,0 +1,105 @@
+/* Estilo Geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Título */
+.title {
+  color: #333;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cabeçalhos de Card */
+.cardHeader {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Detalhes do Lead */
+.cardContent {
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cardContent .MuiTypography-root {
+  margin-bottom: 8px;
+}
+
+/* Botões */
+.button {
+  background-color: #1abc9c;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #16a085;
+}
+
+/* Tabela */
+.table {
+  height: 400px;
+  width: 100%;
+}
+
+.MuiDataGrid-root {
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #2980b9;
+}
+
+.MuiDataGrid-cell {
+  color: #2c3e50;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: #ecf0f1;
+}
+
+.MuiDataGrid-footerContainer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Divider */
+.MuiDivider-root {
+  background-color: #ddd;
+  margin: 20px 0;
+}

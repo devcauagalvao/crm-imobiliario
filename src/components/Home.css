@@ -1,0 +1,162 @@
+/* dashboard.css */
+
+/* Estilos principais */
+.dashboard-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  padding: 30px;
+  margin-left: 290px;
+  color: #333;
+}
+
+/* Cabeçalho do Dashboard */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.filter-options select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filter-options select:hover {
+  border-color: #007bff;
+}
+
+/* Cards do Dashboard */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9fb;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 28px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Efeito de hover no título do card */
+.card:hover h2 {
+  color: #007bff;
+}
+
+/* Placeholder para gráficos */
+.graph-placeholder {
+  height: 220px;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* Layout com grid */
+.summary-cards,
+.performance-leads,
+.region-category,
+.recent-leads-clients,
+.additional-graphs,
+.sales-forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  grid-column: span 1;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #f4f4f4;
+  color: #555;
+}
+
+table td {
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    margin-left: 0;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-header h1 {
+    margin-bottom: 15px;
+  }
+
+  .filter-options select {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .card {
+    height: auto; /* Deixa o card com altura flexível em telas pequenas */
+  }
+}
